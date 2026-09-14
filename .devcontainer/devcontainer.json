@@ -1,0 +1,13 @@
+{
+  "name": "KinFit Family Workout Planner",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "forwardPorts": [3001],
+  "portsAttributes": {
+    "3001": {
+      "label": "KinFit web app",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postStartCommand": "nohup npm start > /tmp/kinfit-server.log 2>&1 &",
+  "remoteUser": "node"
+}
