@@ -8,6 +8,7 @@
       "onAutoForward": "openBrowser"
     }
   },
+  "postCreateCommand": "npm install",
   "postStartCommand": "nohup npm start > /tmp/kinfit-server.log 2>&1 &",
   "remoteUser": "node"
 }
